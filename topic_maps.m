@@ -28,22 +28,3 @@ topic42 = MRIread('v4-topics-50_42_number_numerical_arithmetic_pFgA_z_FDR_0.01.n
 topic1 = MRIread('v4-topics-50_1_object_objects_category_pFgA_z_FDR_0.01.nii.gz');
 
 topic_list = [0;1;2;3;5;7;8;10;11;12;15;17;19;20;22;23;25;29;32;33;35;36;40;41;42;44;47;49];
-
-
-for i = 1:nTopics
-   
-    cd ~/Downloads/
-    
-    abc = sprintf('%s%d','temp = topic',topic_list(i),'.vol;');
-    eval(abc)
-    
-    for j = 1:375
-        temp3 = double(parcels.vol==j);
-        temp3a = sum(sum(sum(double(temp .* temp3>0))));
-        temp4 = temp .* temp3;
-        topic_template4(j,i) = sum(temp4(:))/temp3a;
-    end
-   
-    sprintf('%d',i)
-    
-end
