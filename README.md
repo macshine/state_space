@@ -7,7 +7,7 @@ The study involves conducting a spatial principal component analysis (PCA) on mu
 A brief overview of the analysis plan:
 1. Concatenate parcel-wise data from 100 subjects across 7 tasks
 2. Run 'pca.m' on the concatenated data in MATLAB
-  a) top 5 eigenvectors ('eigenvec.m') and eigenvalues ('eigenval.m') are stored in the repository, along with the XYZ coordinates and network assignment of each parcel;
+  a) top 5 eigenvectors ('eigenvec.m') and eigenvalues ('eigenval.m') are stored in the repository, along with the XYZ coordinates and network assignment of each of the cortical parcels (n = 333);
   b) collapse the data according to the phase of the first tPC in order to estimate the low-dimensional manifold ('make_manifold.m');
 3. Plot the eigenvalues of the eigenvectors and compare these to:
   a) the combined task regressor;
