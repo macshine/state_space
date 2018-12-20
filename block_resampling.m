@@ -1,6 +1,6 @@
 %% score task block resampling
 
-length_data = 1976;
+length_data = 1940;
 niter = 5000;
 % data1 and data2 are the original data (organized as length_data x 1 vectors)
 
